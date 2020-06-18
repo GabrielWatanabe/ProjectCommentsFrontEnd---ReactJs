@@ -1,0 +1,85 @@
+.comment {
+    display: flex;
+    justify-content: space-between;
+    background-color: gainsboro;
+    height: 700px;
+    padding: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+
+.title-comment {
+    resize: none;
+    font-family: Montserrat;
+}
+
+.text-comment {
+  width: 99%;
+  height: 260px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.button-comment {
+  min-width: 100px;
+  width: auto;
+  height: 30px;
+  background: #c0c2c4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #323232;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: Montserrat;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  float: right;
+  /* position:absolute; */
+}
+
+.line {
+    border-left: 2px solid grey;
+    height: 90%;
+    margin-top: 2.4%;
+
+}
+
+.show-comments {
+    max-width: 700px;
+    overflow-y: scroll;
+}
+
+
+.show-comments article {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.div-label {
+    width: 500px;
+    word-wrap: break-word;
+}
+
+.div-label p {
+    margin-right:40px;
+    color: grey;
+    font-size: 18px;
+    font-weight: bold;
+}
