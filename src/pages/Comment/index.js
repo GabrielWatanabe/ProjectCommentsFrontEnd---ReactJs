@@ -50,9 +50,7 @@ class Comment extends Component {
                 },
                 body: JSON.stringify({st_comment: this.state.text })
             });
-            const teste = await rawResponse.json()
-            console.log(teste)
-            // this.setState({comments: [...this.state.comments, await rawResponse.json()]})
+            this.setState({comments: [...this.state.comments, await rawResponse.json()]})
 
         })()
     }
